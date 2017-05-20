@@ -6,13 +6,13 @@ import requests
 #Discord API
 token_file = open('token.txt')
 token = token_file.readline()
-
+token = token[:-1]
 client = discord.Client()
 
 #Wow API
 token_file = open('wow_token.txt')
 wow_token = token_file.readline()
-
+wow_token = wow_token[:-1]
 class_array = [None, 'Warrior', 'Paladin','Hunter','Rogue',
                'Priest', 'Death Knight', 'Shaman', 'Mage',
                'Warlock', 'Monk', 'Druid', 'Demon Hunter' ]
